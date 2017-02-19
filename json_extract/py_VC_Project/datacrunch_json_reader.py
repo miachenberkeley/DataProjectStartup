@@ -1,3 +1,6 @@
+#  /!\ IMPORTANT: for the main function to work, the json file called "metadata_mia.json" 
+#                 is expected to be placed in a folder called "data" where the .py is located ("\data\metadata_mia.json")
+
 import os
 import json
 from functools import reduce
