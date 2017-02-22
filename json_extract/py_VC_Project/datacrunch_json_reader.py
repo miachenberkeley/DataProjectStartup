@@ -1,4 +1,4 @@
-#  /!\ IMPORTANT: for the main function to work, the json file called "metadata_mia.json" 
+#  /!\ IMPORTANT: for the main function to work, the json file called "metadata_mia.json"
 #                 is expected to be placed in a folder called "data" where the .py is located ("\data\metadata_mia.json")
 
 import os
@@ -6,6 +6,8 @@ import json
 from functools import reduce
 import operator
 import re
+import xlsxwriter
+from time import gmtime, strftime
 
 
 # Example : print get_from_dict(json_dict, ['widget', 'text'])
@@ -170,7 +172,113 @@ def get_investment_data(json_dict):
                 invest_dict['investor'] = investor_name
                 investment_data.append(invest_dict)
 
-    return investment_data
+
+def write_data_to_xlsx(worksheet, line, dict_json):
+    if line == 1:
+        k = 0
+        for keys in sorted(dict_json):
+            print keys
+            worksheet.write(0, k, keys)
+            worksheet.write(1, k, dict_json[keys])
+            k += 1
+    else:
+        k = 0
+        for keys in sorted(dict_json):
+            worksheet.write(line, k, dict_json[keys])
+            k += 1
+
+    print line
+    return 0
+
+
+def update_dict(dict_to_write, extracted_json_dict, json_name, category_name):
+
+    if 'uuid' in extracted_json_dict.keys():
+        dict_to_write[category_name + ' uuid'] = extracted_json_dict['uuid']
+
+    if 'type' in extracted_json_dict.keys():
+        dict_to_write[category_name + ' type'] = extracted_json_dict['type']
+
+    extracted_dict = get_from_dict(extracted_json_dict, [json_name])
+    for keys in extracted_dict:
+        if type(extracted_dict[keys]) == list:
+            data = ', '.join(extracted_dict[keys])
+        else:
+            data = extracted_dict[keys]
+        dict_to_write[str(category_name + ' ' + json_name + ' - ' + keys)] = data
+
+    return dict_to_write
+
+
+# Main extraction function
+def write_investment_data(json_dict):
+    json_len = len(json_dict)
+
+    workbook = xlsxwriter.Workbook(strftime("%Y-%m-%d_%H-%M", gmtime()) + '_json_extract.xlsx',
+                                   {'strings_to_urls': False})
+    worksheet = workbook.add_worksheet()
+
+    dict_to_write = {}
+
+    line = 1
+
+    for i in range(0, json_len):
+
+        root_i = json_dict[str(i)]
+        dict_to_write = update_dict(dict_to_write, root_i, 'metadata', 'investment')
+
+        data = root_i['data']
+        dict_to_write = update_dict(dict_to_write, data, 'paging', 'investment')
+
+        if 'items' in data:
+
+            items = data['items']
+            if len(items) > 0:
+
+                for j in range(0, len(items)):
+
+                    item_j = items[j]
+                    dict_to_write = update_dict(dict_to_write, item_j, 'properties', 'investment')
+
+                    funding_round = get_from_dict(item_j, ['relationships', 'funding_round'])
+                    dict_to_write = update_dict(dict_to_write, funding_round, 'properties', 'funding_round')
+
+                    funded_organization = get_from_dict(funding_round, ['relationships', 'funded_organization'])
+                    dict_to_write = update_dict(dict_to_write, funded_organization, 'properties', 'funded_organization')
+
+                    investor = get_from_dict(item_j, ['relationships', 'investors'])
+                    investor = investor[0]
+                    dict_to_write = update_dict(dict_to_write, investor, 'properties', 'investor')
+
+                    # --------------
+                    write_data_to_xlsx(worksheet, line, dict_to_write)
+                    # --------------
+                    line += 1
+
+        elif 'item' in data:
+
+            item = data['item']
+            if len(item) > 0:
+                dict_to_write = update_dict(dict_to_write, item, 'properties', 'investment properties')
+
+                funding_round = get_from_dict(item, ['relationships', 'funding_round'])
+                dict_to_write = update_dict(dict_to_write, funding_round, 'properties', 'funding_round properties')
+
+                funded_organization = get_from_dict(funding_round, ['relationships', 'funded_organization'])
+                dict_to_write = update_dict(dict_to_write, funded_organization, 'properties',
+                                            'funded_organization properties')
+
+                investor = get_from_dict(item, ['relationships', 'investors'])
+                investor = investor[0]
+                dict_to_write = update_dict(dict_to_write, investor, 'properties', 'investor properties')
+
+                # --------------
+                write_data_to_xlsx(worksheet, line, dict_to_write)
+                # --------------
+                line += 1
+
+    return 0
+
 
 if __name__ == "__main__":
     dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -180,24 +288,21 @@ if __name__ == "__main__":
 
     #startup_data = get_startup_data(json_dict)
 
-    investment_data = get_investment_data(json_dict)
+    #investment_data = get_investment_data(json_dict)
 
-    print investment_data[10]  # test
+    #write_investment_data(json_dict)
+
+    write_investment_data(json_dict)
 
 
 """
 create a list of functions that extract each main data of the datacrunch json file
-
 json architecture:
-
 --ARRAY--
     data // data on one investor (in the example here : zygote-venture) and its investments
-
         paging // get name of investor
             next_page_url : "https://api.crunchbase.com/v/3/organizations/zygote-ventures/investments?page=2" // give name of the investor
-
         items => --ARRAY-- OR item (not an array) // list of investments
-
             properties // of the investment made by the investor
                 money_invested : null // I think always "null"
                 money_invested_usd : null // I think always "null"
@@ -205,39 +310,27 @@ json architecture:
                 is_lead_investor : false // only interesting info
                 updated_at : 1453539877
                 created_at : 1433702192
-
             relationships // info on the investment
-
                 funding_round // info on the investment
-
                     relationships // info on the founded organization
-
                         funded_organization
-
                             properties
                                 name : "Bolt Threads"
                                 also_known_as ==> --ARRAY--
-
                                 founded_on : "2009-08-01"
                                 created_at : 1405983588 // date
                                 updated_at : 1485726689 // date
                                 closed_on : null // date (I guess)
-
                                 founded_on_trust_code : 7
                                 closed_on_trust_code : 0
-
                                 permalink : "bolt-threads" // name
                                 homepage_url : "http://www.boltthreads.com" // compagny address
-
                                 num_employees_min : 11
                                 num_employees_max : 50
-
                                 stock_exchange : null
                                 stock_symbol : null
-
                                 number_of_investments : 0
                                 total_funding_usd : 89999999
-
                                 short_description : "Engineering '(...)'"
                                 description : "We believe that '(..)'"
                     properties
@@ -245,21 +338,15 @@ json architecture:
                         created_at : 1433420308
                         updated_at : 1464908145
                         closed_on : null
-
                         web_path : "funding-round/a67902c71f21380746747f437c19381d" // to be combined with 'https://www.crunchbase.com/'
-
                         funding_type : "venture"
-
                         target_money_raised_currency_code : "USD"
                         target_money_raised_usd : null
                         target_money_raised : null
-
                         money_raised_currency_code : "USD"
                         money_raised : 32299999
                         money_raised_usd : 32299999
-
                         series : "B"
-
                         series_qualifier : null
                         announced_on_trust_code : 7 // number of investments (tbc)
                 investors ==> array // only one "investor" every time because data concerns only one investor
@@ -269,32 +356,23 @@ json architecture:
                         also_known_as : null --ARRAY--
                         primary_role : "investor"
                         homepage_url : "http://www.zygoteventures.com"
-
                         role_investor : true
                         role_company : null
                         role_group : null
                         role_school : null
-
                         number_of_investments : 7
                         total_funding_usd : 0
-
                         short_description : "Zygote Ventures is a privately held seed/angel venture capital fund."
                         description : "Zygote Ventures is a privately held seed/angel venture capital fund. Zygote typically invests first, or very early, in innovative enterprises, most often technology, biotech, and agriculture.  As a privately held \u201cangel\u201d investor, Zygote Ventures falls somewhere between an entrepreneur and a traditional venture capital fund. Most VC\u2019s are limited partnerships, investing \u201cother people\u2019s money\u201d and earning much of their profit as fees and carry. In contrast, Zygote invests only its principal\u2019s money, and therefore earns no fees, profiting only from an increase in the value of the enterprise. This means that our interests are very closely aligned with the entrepreneur\u2019s. Without limited partners, Zygote can be less risk-averse than most VCs. Because there is no pressure to do a certain number of deals, or to invest a fixed-size fund, Zygote can choose to partner with those opportunities where we can provide real value. At the same time, as an angel investor
-
                         founded_on : "1981-01-01"
                         created_at : 1272106537
                         updated_at : 1478081659
                         is_closed : false
                         closed_on : null
-
                         founded_on_trust_code : 4
                         closed_on_trust_code : 0
-
                         num_employees_min : null
                         num_employees_max : null
-
                         stock_exchange : null
                         stock_symbol : null
-
 """
-
