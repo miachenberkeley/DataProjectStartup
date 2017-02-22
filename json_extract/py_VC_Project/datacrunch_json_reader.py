@@ -186,8 +186,6 @@ def write_data_to_xlsx(worksheet, line, dict_json):
         for keys in sorted(dict_json):
             worksheet.write(line, k, dict_json[keys])
             k += 1
-
-    print line
     return 0
 
 
