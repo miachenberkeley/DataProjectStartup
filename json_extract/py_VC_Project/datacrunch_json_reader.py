@@ -177,7 +177,6 @@ def write_data_to_xlsx(worksheet, line, dict_json):
     if line == 1:
         k = 0
         for keys in sorted(dict_json):
-            print keys
             worksheet.write(0, k, keys)
             worksheet.write(1, k, dict_json[keys])
             k += 1
@@ -186,6 +185,7 @@ def write_data_to_xlsx(worksheet, line, dict_json):
         for keys in sorted(dict_json):
             worksheet.write(line, k, dict_json[keys])
             k += 1
+
     return 0
 
 
@@ -210,7 +210,6 @@ def update_dict(dict_to_write, extracted_json_dict, json_name, category_name):
 
 # Main extraction function
 def write_investment_data(json_dict):
-    json_len = len(json_dict)
 
     workbook = xlsxwriter.Workbook(strftime("%Y-%m-%d_%H-%M", gmtime()) + '_json_extract.xlsx',
                                    {'strings_to_urls': False})
@@ -220,7 +219,7 @@ def write_investment_data(json_dict):
 
     line = 1
 
-    for i in range(0, json_len):
+    for i in range(0, len(json_dict) - 1):
 
         root_i = json_dict[str(i)]
         dict_to_write = update_dict(dict_to_write, root_i, 'metadata', 'investment')
@@ -233,7 +232,7 @@ def write_investment_data(json_dict):
             items = data['items']
             if len(items) > 0:
 
-                for j in range(0, len(items)):
+                for j in range(0, len(items) - 1):
 
                     item_j = items[j]
                     dict_to_write = update_dict(dict_to_write, item_j, 'properties', 'investment')
@@ -257,23 +256,25 @@ def write_investment_data(json_dict):
 
             item = data['item']
             if len(item) > 0:
-                dict_to_write = update_dict(dict_to_write, item, 'properties', 'investment properties')
+
+                dict_to_write = update_dict(dict_to_write, item, 'properties', 'investment')
 
                 funding_round = get_from_dict(item, ['relationships', 'funding_round'])
-                dict_to_write = update_dict(dict_to_write, funding_round, 'properties', 'funding_round properties')
+                dict_to_write = update_dict(dict_to_write, funding_round, 'properties', 'funding_round')
 
                 funded_organization = get_from_dict(funding_round, ['relationships', 'funded_organization'])
-                dict_to_write = update_dict(dict_to_write, funded_organization, 'properties',
-                                            'funded_organization properties')
+                dict_to_write = update_dict(dict_to_write, funded_organization, 'properties', 'funded_organization')
 
                 investor = get_from_dict(item, ['relationships', 'investors'])
                 investor = investor[0]
-                dict_to_write = update_dict(dict_to_write, investor, 'properties', 'investor properties')
+                dict_to_write = update_dict(dict_to_write, investor, 'properties', 'investor')
 
                 # --------------
                 write_data_to_xlsx(worksheet, line, dict_to_write)
                 # --------------
                 line += 1
+        for keys in dict_to_write:
+            dict_to_write[keys] = ''
 
     return 0
 
