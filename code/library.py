@@ -47,13 +47,13 @@ def clean_text_simple(text, remove_stopwords=True, pos_filtering=True, stemming=
     if remove_stopwords:
         # remove stopwords
         tokens = [token for token in tokens if token not in stpwds]
-    if stemming:
+    '''if stemming:
         stemmer = nltk.stem.PorterStemmer()
         # apply Porter's stemmer
         tokens_stemmed = list()
         for token in tokens:
             tokens_stemmed.append(stemmer.stem(token))
-        tokens = tokens_stemmed
+        tokens = tokens_stemmed'''
 
     return(tokens)
 

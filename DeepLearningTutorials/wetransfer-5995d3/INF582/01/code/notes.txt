@@ -1,0 +1,5 @@
+link to test collections
+http://ir.dcs.gla.ac.uk/resources/test_collections/
+
+nltk
+http://www.nltk.org/
