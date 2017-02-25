@@ -2,39 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60110355-d262-4b4c-bfff-218afe33df0b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/crunchbase_scraping.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/word2vec.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/Altegrad_lab1_moodle/lab1_data/data/directed/Directed_Wiki-Vote.inf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/MNIST_data/train-images-idx3-ubyte.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/data/labeledTrainData.tsv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/data/testData.tsv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/data/unlabeledTrainData.tsv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/income.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/samsung/samsungdata.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/samsung/samsungmin.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/test/Inertial Signals/body_acc_x_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/test/Inertial Signals/body_acc_y_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/test/Inertial Signals/body_acc_z_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/test/Inertial Signals/body_gyro_x_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/test/Inertial Signals/body_gyro_y_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/test/Inertial Signals/body_gyro_z_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/test/Inertial Signals/total_acc_x_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/test/Inertial Signals/total_acc_y_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/test/Inertial Signals/total_acc_z_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/test/X_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/train/Inertial Signals/body_acc_x_train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/train/Inertial Signals/body_acc_y_train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/train/Inertial Signals/body_acc_z_train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/train/Inertial Signals/body_gyro_x_train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/train/Inertial Signals/body_gyro_y_train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/train/Inertial Signals/body_gyro_z_train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/train/Inertial Signals/total_acc_x_train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/train/Inertial Signals/total_acc_y_train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/train/Inertial Signals/total_acc_z_train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/datasets/ucihar/train/X_train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/metadata_mia.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/techcrunch data/metadata_full.json" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3JS/projec1.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/wetransfer-5995d3/INF582/04/wordembeddings_draft_mv.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/wetransfer-5995d3/INF582/05/nlp-intro.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/geckodriver.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/.metadata_mia.json.icloud" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/gradient_descent" afterPath="$PROJECT_DIR$/DeepLearningTutorials/gradient_descent" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/ipython-notebooks" afterPath="$PROJECT_DIR$/DeepLearningTutorials/ipython-notebooks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/intro-to-python" afterPath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/intro-to-python" />
@@ -49,19 +21,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python-fundamentals" afterPath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python-fundamentals" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python-getting-started" afterPath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python-getting-started" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python_and_ml_classes" afterPath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python_and_ml_classes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/.Python" afterPath="$PROJECT_DIR$/venv/.Python" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/bin/python3" afterPath="$PROJECT_DIR$/venv/bin/python3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/IntroductionDL.ipynb" afterPath="$PROJECT_DIR$/DeepLearningTutorials/IntroductionDL.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/library.py" afterPath="$PROJECT_DIR$/code/library.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/investors-2-2-2017.csv" afterPath="$PROJECT_DIR$/investors-2-2-2017.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/bin/easy_install" afterPath="$PROJECT_DIR$/venv/bin/easy_install" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/bin/pip" afterPath="$PROJECT_DIR$/venv/bin/pip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/bin/wheel" afterPath="$PROJECT_DIR$/venv/bin/wheel" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pkg_resources/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pkg_resources/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/config.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/package_index.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/package_index.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3JS/project_1.html" afterPath="$PROJECT_DIR$/D3JS/project_1.html" />
     </list>
     <ignored path="DataProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,78 +41,7 @@
     <favorites_list name="DataProject" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="word2vec.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/word2vec.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-              <folding>
-                <element signature="e#1#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="crunchbase_scraping.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/crunchbase_scraping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datacrunch_json_reader.py" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Dropbox/Echange Gil - Mia/gil/json_extract/py_VC_Project/datacrunch_json_reader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="181" column="19" selection-start-line="181" selection-start-column="19" selection-end-line="181" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="linkedin_scraping.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeepLearningTutorials/Anseri/linkedin_scraping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="71" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nn_prediction.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../KaggleChallenge/nn_prediction.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buildModel.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../KaggleChallenge/buildModel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-960">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -197,13 +87,14 @@
         <option value="$PROJECT_DIR$/../KaggleChallenge/nn_prediction.py" />
         <option value="$PROJECT_DIR$/code/crunchbase_scraping.py" />
         <option value="$USER_HOME$/Dropbox/Echange Gil - Mia/gil/json_extract/py_VC_Project/datacrunch_json_reader.py" />
+        <option value="$PROJECT_DIR$/D3JS/project_1.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1640" />
-    <option name="height" value="740" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -295,13 +186,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="D3JS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JE/Chronomap" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/Echange Gil - Mia" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -460,16 +365,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1640" height="740" extended-state="0" />
+    <frame x="0" y="23" width="1366" height="741" extended-state="1" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22421248" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22379182" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24653313" sideWeight="0.3732342" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21346705" sideWeight="0.48252788" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.9506173" sideWeight="0.6267658" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.117103234" sideWeight="0.6267658" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -519,27 +424,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DeepLearningTutorials/Altegrad_lab1_moodle/lab1_data/multiplespreaders/Greedy/MC_100/LT_Greedy.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeepLearningTutorials/Altegrad_lab1_moodle/lab1_data/singlespreaders/sir/scenario1/groupA/av_sir_results_node12.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeepLearningTutorials/Altegrad_lab1_moodle/lab1_data/singlespreaders/sir/scenario1/groupA/Ex1_Single_spreader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DeepLearningTutorials/Altegrad_lab1_moodle/lab1_data/singlespreaders/sir/scenario1/groupA/av_sir_results_node1005.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -721,9 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#16#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -731,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,9 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="351" column="0" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,31 +626,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="132" column="42" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/nn_prediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/buildModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="53" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/nn_prediction.py" />
+    <entry file="file://$USER_HOME$/Downloads/buildModel.py" />
     <entry file="file://$PROJECT_DIR$/../KaggleChallenge/extraction_words_pr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,37 +642,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../KaggleChallenge/buildModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-960">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../KaggleChallenge/nn_prediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/word2vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="300">
           <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="e#1#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -819,9 +656,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-105">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/crunchbase_scraping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/Echange Gil - Mia/gil/json_extract/py_VC_Project/datacrunch_json_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2655">
+          <caret line="181" column="19" selection-start-line="181" selection-start-column="19" selection-end-line="181" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -829,26 +678,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/crunchbase_scraping.py">
+    <entry file="file://$PROJECT_DIR$/../KaggleChallenge/nn_prediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="514">
+          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Dropbox/Echange Gil - Mia/gil/json_extract/py_VC_Project/datacrunch_json_reader.py">
+    <entry file="file://$PROJECT_DIR$/../KaggleChallenge/buildModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="181" column="19" selection-start-line="181" selection-start-column="19" selection-end-line="181" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3JS/d3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="1" column="2434" selection-start-line="1" selection-start-column="2434" selection-end-line="1" selection-end-column="2434" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3JS/projec1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3JS/project_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
           <folding />
         </state>
       </provider>
