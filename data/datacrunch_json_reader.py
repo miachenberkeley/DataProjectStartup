@@ -3,6 +3,7 @@ import json
 from functools import reduce
 import operator
 import re
+import csv
 
 
 # Example : print get_from_dict(json_dict, ['widget', 'text'])
@@ -138,6 +139,7 @@ def get_investment_data(json_dict):
             if len(temp1) > 0:
 
                 temp2 = get_from_dict(temp1[0], ['relationships', 'investors'])
+
                 if len(temp2) > 0:
                     investor_name = get_from_dict(temp2[0], ['properties', 'name'])
 
@@ -145,8 +147,10 @@ def get_investment_data(json_dict):
                     invest_dict = {}
                     invest_dict['startup'] = get_from_dict(temp1[j], ['relationships', 'funding_round', 'relationships',
                                                                       'funded_organization', 'properties', 'name'])
+
                     invest_dict['investment'] = get_from_dict(temp1[j], ['relationships', 'funding_round',
                                                                          'properties'])
+
                     invest_dict['investor'] = investor_name
                     investment_data.append(invest_dict)
 
@@ -162,14 +166,18 @@ def get_investment_data(json_dict):
 
                 invest_dict['startup'] = get_from_dict(temp1, ['relationships', 'funding_round', 'relationships',
                                                                'funded_organization', 'properties', 'name'])
+
                 invest_dict['investment'] = get_from_dict(temp1, ['relationships', 'funding_round',
                                                                   'properties'])
+
                 invest_dict['investor'] = investor_name
+
                 investment_data.append(invest_dict)
 
     return investment_data
 
 if __name__ == "__main__":
+
     dir_path = os.path.dirname(os.path.realpath(__file__))
     json_dict = json_extract(dir_path + "/metadata_mia.json")
 
@@ -178,12 +186,50 @@ if __name__ == "__main__":
     #startup_data = get_startup_data(json_dict)
 
     investment_data = get_investment_data(json_dict)
-    for i in investment_data:
-        print'hello'
-        print i# test
+    with open('investisor_startup.csv', 'wb') as csvfile:
+        spamwriter = csv.writer(csvfile, delimiter=' ',
+                                quotechar=' ', quoting=csv.QUOTE_MINIMAL)
+        spamwriter.writerow(u','.join(['investor', 'startup', 'investment_permalink',
+                                       'investment_announced_on',
+                                       'investment_closed_on_trust_code', 'investment_api_path',
+                                       'investment_series', 'investment_created_at',
+                                       'investment_web_path', 'investment_updated_at',
+                                       'investment_money_raised_usd',
+                                       'investment_announced_on_trust_code',
+                                       'investment_series_qualifier',
+                                       'investment_target_money_raised_currency_code',
+                                       'investment_money_raised_currency_code',
+                                       'investment_funding_type',
+                                       'investment_target_money_raised_usd']).encode('utf-8').strip())
+        for i in investment_data:
+
+
+            spamwriter.writerow(u','.join([i['investor'],i['startup'],str(i['investment']['permalink']),
+                                 str(i['investment']['announced_on']),str(i['investment']['closed_on_trust_code']),str(i['investment']['api_path']),
+                                 str(i['investment']['series']), str(i['investment']['created_at']), str(i['investment']['web_path']), str(i['investment']['updated_at']), str(i['investment']['money_raised_usd']),
+                                 str(i['investment']['announced_on_trust_code']),str(i['investment']['series_qualifier']),str(i['investment']['target_money_raised_currency_code']),
+                                 str(i['investment']['money_raised_currency_code']),str(i['investment']['funding_type']),
+                                 str(i['investment']['target_money_raised_usd'])]).encode('utf-8').strip())
+
+            #spamwriter.writerow([i['investor'], i['startup'], i['investment']])
+
+
+
 
 
 """
+,str(i['investment']['permalink']),
+                                 str(i['investment']['announced_on']),str(i['investment']['closed_on_trust_code']),str(i['investment']['api_path']),
+                                 str(i['investment']['series']), str(i['investment']['created_at']), str(i['investment']['web_path']), str(i['investment']['updated_at']), str(i['investment']['money_raised_usd']),
+                                 str(i['investment']['announced_on_trust_code']),str(i['investment']['series_qualifier']),str(i['investment']['target_money_raised_currency_code']),
+                                 str(i['investment']['money_raised_currency_code']),str(i['investment']['funding_type']),
+                                 str(i['investment']['target_money_raised_usd'])])
+,i['investment']['permalink'],
+                                 i['investment']['announced_on'],i['investment']['closed_on_trust_code'],i['investment']['api_path'],
+                                 i['investment']['series'], i['investment']['created_at'], i['investment']['web_path'], i['investment']['updated_at'], i['investment']['money_raised_usd'],
+                                 i['investment']['announced_on_trust_code'],i['investment']['series_qualifier'],i['investment']['target_money_raised_currency_code'],
+                                 i['investment']['money_raised_currency_code'],i['investment']['funding_type'],
+                                 i['investment']['target_money_raised_usd']
 create a list of functions that extract each main data of the datacrunch json file
 
 json architecture:

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60110355-d262-4b4c-bfff-218afe33df0b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3JS/projec1.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/wetransfer-5995d3/INF582/04/wordembeddings_draft_mv.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DeepLearningTutorials/wetransfer-5995d3/INF582/05/nlp-intro.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/geckodriver.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/.metadata_mia.json.icloud" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json_extract/py_VC_Project/.2017-02-22_22-53_json_extract.xlsx.icloud" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/gradient_descent" afterPath="$PROJECT_DIR$/DeepLearningTutorials/gradient_descent" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/ipython-notebooks" afterPath="$PROJECT_DIR$/DeepLearningTutorials/ipython-notebooks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/intro-to-python" afterPath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/intro-to-python" />
@@ -21,8 +17,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python-fundamentals" afterPath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python-fundamentals" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python-getting-started" afterPath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python-getting-started" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python_and_ml_classes" afterPath="$PROJECT_DIR$/DeepLearningTutorials/nborwankar-LearnDataScience-739a002/ressources/python_and_ml_classes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3JS/project_1.html" afterPath="$PROJECT_DIR$/D3JS/project_1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/investors-2-2-2017-copie.csv" afterPath="$PROJECT_DIR$/investors-2-2-2017-copie.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/datacrunch_json_reader.py" afterPath="$PROJECT_DIR$/data/datacrunch_json_reader.py" />
     </list>
     <ignored path="DataProject.iws" />
     <ignored path=".idea/workspace.xml" />
