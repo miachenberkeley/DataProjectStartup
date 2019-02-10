@@ -1,0 +1,158 @@
+Skip to content
+Your account has been flagged.
+Because of that, your profile is hidden from the public. If you believe this is a mistake, contact support to have your account status reviewed.
+
+weedmaps ai
+Repositories0
+Code235
+Commits2
+Issues0
+Marketplace0
+Topics0
+Wikis0
+Users0
+Language
+
+Sort
+
+235 code results
+@rails-udhaya
+rails-udhaya/demos – home_controller.rb
+Showing the top three matches
+Last indexed on Jun 28, 2018
+Ruby
+def weedmaps_demo_two
+		send_file("#{Rails.root}/public/weedmaps_demo_two.xlsx" )
+		Emailer.check_email("https://www.elance.com/j/website-scraper-data-mining-website-crawler-directory-extraction/63992434/?bidid=64004326","Testing #{Rails.env} weedmaps ").deliver
+end
+
+def weedmaps_demo
+		send_file("#{Rails.root}/public/weedmaps_demo.xlsx" )
+@cbliou
+cbliou/vape-scrape – weedMaps-checkpoint.ipynb
+Showing the top two matches
+Last indexed 10 days ago
+Jupyter Notebook
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Load Weedmaps dataframe"
+    "def load_weedmaps_df(lower_latitude, left_longitude, upper_latitude, right_longitude):\n",
+@cbliou
+cbliou/vape-scrape – weedMaps.ipynb
+Showing the top two matches
+Last indexed 10 days ago
+Jupyter Notebook
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Load Weedmaps dataframe"
+    "def load_weedmaps_df(lower_latitude, left_longitude, upper_latitude, right_longitude):\n",
+@wobscale
+wobscale/EuIrcBot – startup.js
+Showing the top two matches
+Last indexed on Jun 27, 2018
+JavaScript
+    'Pandora', 'Foursquare', 'Facebook', 'Netflix', 'Gmail', 'LinkedIn', 'NASA',
+    'Eclipse', 'Spotify', 'Paypal', 'Twitter', 'AI', 'SB', 'GitHub', 'Google Glass',
+    'Maps', 'Quora', 'Groupon', 'RSS', 'Redis', 'MapReduce', 'the iPhone',
+    'Weedmaps', 'SnapChat', 'drones', 'WordPress', 'Napster', 'Tumblr', 'AirBnB',
+@gitumarkk
+gitumarkk/kubecon2018jobs – jobsboard.json
+Showing the top three matches
+Last indexed on Dec 18, 2018
+JSON
+        "website": "https://www.payitgov.com/open-positions/",
+        "role": "SRE"
+    },
+    {
+        "name": "SpotAI",
+        "role": ""
+    },
+    {
+        "name": "Weedmaps",
+        "website": "https://weedmaps.com/careers",
+        "role": ""
+@cbliou
+cbliou/vape-scrape – 00 - scraping weedmaps-checkpoint.ipynb
+Showing the top match
+Last indexed 7 days ago
+Jupyter Notebook
++tOMcrHUiOZUWdpFdVU4fb/rscp915N0Zcdx12LFqE/WvXYfzky+UOjdq<em>Ai</em>TqRj6UMHIiUAQNw+6s
+@cbliou
+cbliou/vape-scrape – 00 - scraping weedmaps.ipynb
+Showing the top match
+Last indexed 7 days ago
+Jupyter Notebook
++tOMcrHUiOZUWdpFdVU4fb/rscp915N0Zcdx12LFqE/WvXYfzky+UOjdq<em>Ai</em>TqRj6UMHIiUAQNw+6s
+@wsdo
+wsdo/nextjs-top – showcase-manifest.js
+Showing the top two matches
+Last indexed on Dec 24, 2018
+JavaScript
+  'a24',
+  'avocode',
+  'expo',
+  'sumup',
+  'hashnode',
+  'jet',
+  'weedmaps',
+  'sanity',
+  'aenetworks',
+    tags: ['creative']
+  },
+  scale: {
+    title: 'Scale',
+    link: 'https://scale.ai',
+    src: '/static/images/showcases/showcases-04.jpg',
+@aruzikulov
+aruzikulov/cresto.io – showcase-manifest.js
+Showing the top two matches
+Last indexed on Dec 18, 2018
+JavaScript
+  'a24',
+  'avocode',
+  'expo',
+  'sumup',
+  'hashnode',
+  'jet',
+  'weedmaps',
+  'sanity',
+  'aenetworks',
+    tags: ['creative']
+  },
+  scale: {
+    title: 'Scale',
+    link: 'https://scale.ai',
+    src: '/static/images/showcases/showcases-04.jpg',
+@zeit
+zeit/next-site – showcase-manifest.js
+Showing the top two matches
+Last indexed 20 days ago
+JavaScript
+  'a24',
+  'avocode',
+  'expo',
+  'sumup',
+  'hashnode',
+  'jet',
+  'weedmaps',
+  'sanity',
+  'aenetworks',
+  scale: {
+    title: 'Scale',
+    link: 'https://scale.ai',
+    src: '/static/images/showcases/showcases-04.jpg',
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
